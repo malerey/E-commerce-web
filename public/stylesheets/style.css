@@ -403,20 +403,102 @@ a.grow {
     padding: 10px 25px;
 }
 
-.addproduct {
+.logout {
+	margin-top: 30px;
 	text-align: center;
+}
+
+#logout {
+    height: 50px;
+		width: 150px;
+		margin-top: 40px;
+    background: #556b2f;
+    border: 0px;
+    color: #fff;
+		font-size: 30px;
+		display:inline-block;
+}
+
+#logout a {
+	    color: #fff;
+
+}
+
+#logout:hover {
+    -webkit-transform: scale(1.1);
+    background: #768858;
+}
+
+.addproduct {
+	margin-top: 30px;
+	text-align: center;
+
+}
+
+.button-wrapper {
+	height: 300px;
+}
+
+#validate {
+    height: 50px;
+    width: 100px;
+		margin-top: 40px;
+    background: #556b2f;
+    border: 0px;
+    color: #fff;
+		font-size: 30px;
+		display:inline-block;
+
+
+
+}
+
+#validate a {
+	    color: #fff;
+
+}
+
+#validate:hover {
+    -webkit-transform: scale(1.1);
+    background: #768858;
+}
+
+
+#home {
+    height: 50px;
+    width: 200px;
+		margin-top: 40px;
+    background: #556b2f;
+    border: 0px;
+    color: #fff;
+		font-size: 30px;
+		display:inline-block;
+
+
+
+}
+
+#home a {
+	    color: #fff;
+
+}
+
+#home:hover {
+    -webkit-transform: scale(1.1);
+    background: #768858;
 }
 
 #send {
     height: 50px;
     width: 100px;
+		margin-top: 40px;
     background: #556b2f;
-		margin: 20px;
     border: 0px;
     color: #fff;
 		font-size: 30px;
-		text-align: center;
-		display: block;
+		display:inline-block;
+
+
 
 }
 

@@ -2,7 +2,6 @@ let uploader = {}
 const auth = require('../services/authService')
 const product = require('../services/productService')
 
-/* render home page. */
 
 let isAuthenticated = false;
 

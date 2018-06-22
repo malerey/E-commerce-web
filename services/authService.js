@@ -6,7 +6,7 @@ const user = {
 }
 
 self.authenticate = function (data) {
-  console.log('soy service', data)
+  console.log(data)
   if (data.username == user.username && data.password == user.password ) {
     return true;
   } else {

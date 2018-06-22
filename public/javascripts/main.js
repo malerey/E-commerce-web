@@ -1,6 +1,18 @@
-// for auth
+$('#logout').on('click', function() {
 
-$('#send').on('click', function() {
+  $.ajax({
+    url: 'http://localhost:3000/authenticate',
+    method: 'POST',
+    data: {
+      username: 'a',
+      password: 'a',
+    }
+}).done(function() {
+  alert("new pass")
+});
+});
+
+$('#validate').on('click', function() {
   let username = $('#username').val();
   let password = $('#password').val();
 
@@ -19,7 +31,6 @@ $('#send').on('click', function() {
   })
 });
 
-//for product loading
 
 $('#send').on('click', function() {
   let name = $('#product-name').val();
@@ -35,6 +46,5 @@ $('#send').on('click', function() {
       price: price,
     }
   }).done(function(data) {
-      console.log(data);
   });
 });

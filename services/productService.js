@@ -3,7 +3,7 @@ let self = {}
 let products = []
 
 self.addProduct = function (data) {
-  console.log('soy service', data)
+  console.log(data)
   let newProduct = {
     name: data.name,
     url: data.url,
