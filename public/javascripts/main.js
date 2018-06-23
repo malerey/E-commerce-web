@@ -2,14 +2,11 @@ $('#logout').on('click', function() {
 
   $.ajax({
     url: 'http://localhost:3000/authenticate',
-    method: 'POST',
+    method: 'PUT',
     data: {
-      username: 'a',
-      password: 'a',
+      id: false,
     }
-}).done(function() {
-  alert("new pass")
-});
+})
 });
 
 $('#validate').on('click', function() {
@@ -26,7 +23,10 @@ $('#validate').on('click', function() {
     statusCode: {
   		'302': function() {
 	  	   window.location.replace('/agregar');
-	    }
+	    },
+      '400': function() {
+        alert("Wrong username and/or password")
+      }
     }
   })
 });

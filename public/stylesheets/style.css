@@ -91,18 +91,25 @@ nav a img {
     padding: 18px 0px;
 }
 
+.menu-container {
+display: flex;
+}
+
 .menu {
-    margin: 5px 0 0 0;
+    margin-top: 5px;
+		margin-left: 30px;
     padding: 0;
     width: 100%;
     list-style: none;
     display: inline-block;
     position: relative;
     font-size: 15px;
+			display:flex;
+			justify-content: flex;
+			align-items: center;
 }
 
 .menu li a {
-    float: left;
     padding-right: 45px;
     color: #000;
     font-size: 16px;
@@ -115,6 +122,11 @@ nav a img {
 
 .items li:hover a {
 	color:#556b2f;
+}
+
+.search-bar {
+    width: 93%;
+
 }
 
 .search-bar input[type="text"] {
@@ -141,10 +153,7 @@ nav a img {
     top: 9px;
     right: 10%;
 }
-.search-bar {
-    width: 93%;
-    float: right;
-}
+
 
 
 /*--about- descripcion de los productos--*/
@@ -161,7 +170,6 @@ nav a img {
 }
 .about-left figure {
 	position: relative;
-	float: left;
 	overflow: hidden;
 	text-align: center;
 	cursor: pointer;

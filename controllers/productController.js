@@ -3,10 +3,13 @@ const auth = require('../services/authService')
 const product = require('../services/productService')
 
 
-let isAuthenticated = false;
+
+
+
 
 uploader.home = function(req, res) {
-  if (isAuthenticated) {
+  const ValidAuth = auth.ValidAuth
+  if (ValidAuth == true) {
     res.render('agregar')
   }
   else {
@@ -18,21 +21,32 @@ uploader.auth = function(req, res) {
   res.render('auth')
 }
 
+uploader.updateStatus = function(req, res) {
+  auth.updateStatus(req.body.id);
+  res.redirect('/')
+}
+
+
+
+
 uploader.authenticate = function(req, res) {
   const body = req.body
     if (body.username && body.password) {
-      isAuthenticated = auth.authenticate(body);
-      if (isAuthenticated == true) {
+      const ValidAuth = auth.authenticate(body);
+      if (ValidAuth == true) {
+        auth.updateStatus(ValidAuth);
         res.sendStatus(302)
-      }
+      } else {
+          res.sendStatus(400);}
     } else {
-    return res.sendStatus(400)
+
+    res.sendStatus(400);
+
   }
 }
 
 uploader.addNew = function(req, res) {
   const body = req.body;
-  console.log(body)
   if (body.name && body.url && body.price) {
     product.addProduct(body)
   } else {

@@ -13,6 +13,6 @@ router.get('/agregar', productController.home)
 router.post('/add', productController.addNew)
 router.get('/auth', productController.auth)
 router.post('/authenticate', productController.authenticate)
-
+router.put('/authenticate', productController.updateStatus)
 
 module.exports = router;
