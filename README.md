@@ -8,8 +8,10 @@ The task was to create a webpage with Node where an Admin could add products for
 
 To run the app, download all files and run the following commands:
 
-# npm install
-# npm start 
+```
+npm install
+npm start
+```
 
 The website runs on port 3000. To add a new product, login as admin (user and password are both "admin") and add the name, an image and the price of the product. 
 On returning to the homepage, you'll be able the see the added products. 
