@@ -1,5 +1,5 @@
-# E-commerce-web
-Add products and store them in server   
+# Online jewelry store 
+Node.js - Add products for sale  
 
 This is a simple e-commerce web based on the design of my previous one: https://malerey.github.io/avadefaye/index.html
 It's built on Node, Express, and jQuery. The design uses Bootstrap and Sass. 
